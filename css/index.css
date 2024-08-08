@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header{
+    text-align: center;
+}
+
+header, main{
+    width: 70%;
+    margin-left: 15%;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 8px;
+}
+
+.bloque{
+    margin-top: 8px;
+    width: 50%;
+}
+
+input{
+    width: 100%;
+    padding: 8px;
+    border: 0.5px solid;
+    border-radius: 0.3rem;
+}
+
+.input{
+    margin-top: 8px;
+}
+
+.check{
+    width: 15px;
+    margin-top: 16px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    font-weight: bold;
+}
+
+.btn{
+    width: 100%;
+    margin-top: 16px;
+    border: 0;
+    border-radius: 0.3rem;
+    background-color: #333;
+    color: white;
+    padding: 8px;
+    
+}
+
+.btn:hover{
+    background-color: rgb(56, 218, 56);
+    font-weight: bold;
+}
+
+/* SOLICITAR ACTIVACION */
+.activar{
+    color: red;
+}
+
+/* MODAL */
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.txt_modal{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 60px;
+    padding: 24px;
+    background-color: white;
+}
+
+.close{
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    right: 35px;
+    top: 35px;
+    color: white;
+    cursor: pointer;
+}

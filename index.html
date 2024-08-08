@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="#">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>Checkbox</title>
+</head>
+
+<body>
+    <header>
+        <h1>Aceptar política de privacidad</h1>
+        <p>Formulario con un checkbox que hay que selecionar para indicar que se ha aceptado la política de privacidad de datos</p>
+    </header>
+
+    <main>
+        <div class="formulario">
+            <form class="form" action="get">
+                <div class="row">
+                    <div class="bloque">
+                        <label for="name">Nombre:</label>
+                        <input type="text" class="input" placeholder="Introduzca su nombre">
+                    </div>
+                    <div class="bloque">
+                        <label for="surname">Apellidos:</label>
+                        <input type="text" class="input" placeholder="Introduzca sus apellidos">
+                    </div>
+                </div>
+                <label for="checkbox">
+                    <input type="checkbox" name="politica" id="aceptar" class="check"> Aceptar <a id="modal_politica" href="#">Política de Privacidad</a>
+                    <div id="activarCheckbox"></div>
+                </label>
+                <button id="submit" class="btn" required>SUBMIT</button>
+            </form>
+        </div>
+
+        <div id="modal" class="modal">
+            <div class="txt_modal">
+                <span class="close">&times;</span>
+                <p id="politica"></p>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
